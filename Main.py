@@ -1,6 +1,5 @@
 import Ayush
 import Tanmay
-import Aditya
 import Samridhi
 
 
@@ -8,10 +7,8 @@ import Samridhi
 
 
 def calc(a, b, op):
-    if op == '+':
-        Aditya(a,b)
         
-    elif op == '-':
+    if op == '-':
         Tanmay(a,b)
         
     elif op == '*':
@@ -27,7 +24,7 @@ def calc(a, b, op):
 try:
     a = float(input("Enter the first number: "))
     b = float(input("Enter the second number: "))
-    op = input("Enter the operation (+, -, *, /): ")
+    op = input("Enter the operation (-, *, /): ")
 
     result = calc(a, b, op)
     print("Result:", result)
